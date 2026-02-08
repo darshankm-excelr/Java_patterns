@@ -10,8 +10,10 @@ class Geeks {
         // Adding elements in List
         li.add("Java");
         li.add("Python");
-        li.add("DSA");
         li.add("C++");
+        li.add("");
+        li.add("C++");
+        
 
         System.out.println("Elements of List are:");
 
