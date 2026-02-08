@@ -1,28 +1,42 @@
 import java.util.Scanner;
 
-class Angstrom {
+class AngstromNumber {
 
+    // function to calculate power
+    public static int powers(int b, int e) {
+        int result = 1;
+        for (int i = 1; i <= e; i++) {
+            result *= b;
+        }
+        return result;
+    }
+
+    // function to check Armstrong number
     public static boolean isAngstrom(int n) {
         int original = n;
-        int res = 0;
-        int digit = String.valueOf(n).length();
+        int digits = String.valueOf(n).length();
+        int sum = 0;
 
         while (n > 0) {
             int d = n % 10;
-            res += Math.pow(d, digit);
-            n = n / 10;
+            sum += powers(d, digits);
+            n /= 10;
         }
 
-        return original == res;
+        return sum == original;
     }
 
+    // Driver code
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
 
-        if (isAngstrom(n))
-            System.out.println("It is an Armstrong number");
-        else
-            System.out.println("It is not an Armstrong number");
+        int start = sc.nextInt();   // starting limit
+        int end = sc.nextInt();     // ending limit
+
+        for (int i = start; i <= end; i++) {
+            if (isAngstrom(i)) {
+                System.out.println(i);
+            }
+        }
     }
 }
