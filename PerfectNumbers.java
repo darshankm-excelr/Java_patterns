@@ -1,19 +1,17 @@
 
 import java.util.Scanner;
-
-class PerfectNumber{
-    public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
+class DivibleOf7And9{
+     public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
         int n=sc.nextInt();
-        int sum=0;
-        for(int i=1;i<n;i++){
-            if(n%i==0){
-           sum+=i;
-        }
-     }
-        if(sum==n)
-            System.out.println("perfect number");
-        else
-            System.out.println("not perfect number");
+     int count = 0;
+
+for(int i = 1; i <= n; i++) {
+    if(i % 7 == 0 && i % 9 == 0) {
+        count++;
     }
 }
+
+System.out.println("Count = " + count);
+        }
+    }

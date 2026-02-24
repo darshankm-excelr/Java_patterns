@@ -1,16 +1,23 @@
+
 import java.util.Scanner;
-public class PerfectNumber {
-      public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a number: ");
-         int number = sc.nextInt();
-         int sum = 0;
-          for (int i = 1; i < number; i++) {
-              if (number % i == 0) {
-                sum += i;
-     }
+
+class Arays{
+  public static void main(String[] args) {
+    
+      Scanner sc=new Scanner(System.in);
+      int n=sc.nextInt();
+      
+      
+      String[] st=new String[n];
+
+
+      for(int i=0;i<n;i++){
+          st[i]=sc.nextLine();
+      }
+   for(String x:st){
+    System.out.println(x);
    }
-      System.out.println(sum == number ? "Perfect Number" : "Not a Perfect Number");
-         sc.close();
- }
+
+      
+  }
 }
