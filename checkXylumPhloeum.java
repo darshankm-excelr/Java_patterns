@@ -6,19 +6,19 @@ public class checkXylumPhloeum {
 
     public static String checkXylumPhloem(int n) {
         
-        int es = 0, ms = 0;
+        int es = 0, ms = 0, t=n;
 
-        es = es + n % 10;   
-        n = n / 10;
-
-        while(n > 9) {
-            ms = ms + n % 10;   
-            n = n / 10;
+        
+        while(n != 0) {
+           
+           int d  = n % 10;
+           if(n==t||n==d)
+             es=es+d;
+           else
+            ms=ms+d;
+         n=n/10;
         }
-
-        es = es + n; 
-
-        return es == ms ? "Xylum" : "Phloem";
+         return es == ms ? "Xylum" : "Phloem";
     }
 
     public static void main(String[] args) {
