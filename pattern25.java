@@ -10,7 +10,7 @@ public class patter25 {
             for(int j = 1; j <= n; j++) {
               
 
-                if(  j == n || j == 1 ||i==1||i==n||j==n/2+1||i==n/2+1 ) {
+                if(  j == n || j == 1 ||i==1 ||i==n/2+1) {
                     System.out.print("* ");
                 }
                 else {
