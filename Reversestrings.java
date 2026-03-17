@@ -6,7 +6,7 @@ class reverse{
         }
         return t;
     }
-    static boolean  isPolindrom(String s){
+    static boolean  isPolindrom(String s){  
         if(s.equals(ReverseString(s))){
             return true;
         }

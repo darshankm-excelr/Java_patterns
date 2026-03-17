@@ -11,7 +11,7 @@ class Angle{
        double  HourAngle= hr*30+min*0.5;
        double angle=minitAngle-HourAngle;
        if(angle<0)
-            angle=angle*1;
+            angle=angle*-1;
         else if(angle>180)
             angle=360-angle;
        System.out.println("least angle is"+angle);

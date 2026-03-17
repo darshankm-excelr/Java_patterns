@@ -18,6 +18,6 @@ class Largest{
       for(int i=0;i<nums.length;i++){
      nums[i]=sc.nextInt();
       }
-      System.out.println(largestElement(int []nums));
+      System.out.println(largestElement());
     }
 }

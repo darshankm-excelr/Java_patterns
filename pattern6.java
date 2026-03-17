@@ -9,7 +9,7 @@ class pattern3{
         System.out.println("enter the number");
         int n=sc.nextInt();
         for(int i=1;i<=n;i++){
-            for(int j=n;j>=i;j--){
+            for(int j=n;j>=1;j--){
               System.out.print(j+ " ");
             }
             System.out.println();

@@ -8,8 +8,10 @@ public class patter24 {
 
         for(int i = 1; i <= n; i++) {
             for(int j = 1; j <= n; j++) {
+               //M if(  j == n || j == 1 ||(i==j||i+j==n+1)&&i<=n/2+1 ) 
+               // W if(  j == n || j == 1 ||(i==j||i+j==n+1)&&i>=n/2+1 )
 
-                if(i == 1 || i == n || j == 1 || j == n || i == j || i + j == n + 1) {
+                if(  j == n || j == 1 ||i==1||i==n||j==n/2+1||i==n/2+1 ) {
                     System.out.print("* ");
                 }
                 else {

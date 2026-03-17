@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class DecimalToOctal {
+public class DecimalToHexadecimal {
 
     static String decToHex(int n){
 

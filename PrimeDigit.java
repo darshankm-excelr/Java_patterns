@@ -9,7 +9,7 @@ class PrimeDigit{
         while(n>0){
             int digit=n%10;
             
-            if(n%digit!=0){
+            if(n%digit==0){
                 count++;
                 
             }
