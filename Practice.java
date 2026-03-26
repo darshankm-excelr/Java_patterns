@@ -1,19 +1,29 @@
-class Box{
-  double width;
-  double height;
-  double depth;
-  double volume(){
-     return width*height*depth;
+
+import java.util.Scanner;
+class Practice{
+  public static int SumArray(int a[]){
+int sum=0;int avg=0;
+    for(int i=0;i<a.length;i++){
+      sum+=a[i];
+      
+    }
+    avg=sum/a.length;
+    return avg;
     
   }
-}
-class Practice{
     public static void main(String args[]){
-        Box mybox=new Box();
-        mybox.width=12;
-        mybox.height=10;
-        mybox.depth=10;
-       System.out.println( mybox.volume());
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter the size");
+      int n=sc.nextInt();
+
+      int a[]=new int[n];
+      for(int i=0;i<a.length;i++){
+        a[i]=sc.nextInt();
+      }
+     
+        System.out.println(SumArray(a));
+      
+
 
     }
 }
